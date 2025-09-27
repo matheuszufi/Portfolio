@@ -9,7 +9,7 @@ function Header({ isDarkMode, toggleTheme }: HeaderProps) {
       <nav className="header-nav">
         {/* Logo ou nome do portfolio */}
         <div className="header-logo">
-          Portfolio
+          MZ
         </div>
         
         {/* Menu de navegação */}

@@ -1,5 +1,7 @@
 ﻿import Header from "./components/Header";
+import ProjectMarquee from "./components/ProjectMarquee";
 import matheusImage from "./assets/images/matheus1.png";
+import matheusAboutImage from "./assets/images/matheus.png";
 import JavaScriptIcon from "./assets/icons/skills/javascript-svgrepo-com.svg";
 import ReactIcon from "./assets/icons/skills/react-svgrepo-com.svg";
 import FirebaseIcon from "./assets/icons/skills/firebase-svgrepo-com.svg";
@@ -104,64 +106,103 @@ function App() {
         </div>
       </section>
 
-      <section className="portfolio-section">
-        <div className="portfolio-container">
-          <div className="portfolio-header">
-            <h2 className="portfolio-title">Meu Portfólio</h2>
-            <p className="portfolio-subtitle">Alguns projetos que desenvolvi utilizando as mais diversas tecnologias</p>
-          </div>
-          
-          <div className="portfolio-grid">
-            <div className="portfolio-item">
-              <div className="portfolio-image">
-                <img src="/api/placeholder/400/250" alt="E-commerce React" />
-                <div className="portfolio-overlay">
-                  <div className="portfolio-info">
-                    <h3>E-commerce Moderno</h3>
-                    <p>Loja virtual completa com React + TypeScript, carrinho de compras e integração com API de pagamentos</p>
-                    <div className="portfolio-links">
-                      <a href="#" className="portfolio-link">Demo</a>
-                      <a href="#" className="portfolio-link">GitHub</a>
-                    </div>
-                  </div>
+      <ProjectMarquee />
+
+      <section className="about-section">
+        <div className="about-container">
+          <div className="about-content">
+            <div className="about-text">
+              <h2 className="about-title">Sobre Mim</h2>
+              <p className="about-description">
+                Sou um desenvolvedor Full Stack com mais de 3 anos de experiência, especializado em criar 
+                soluções digitais inovadoras e eficientes. Minha paixão pela tecnologia me levou a dominar 
+                diversas ferramentas e linguagens de programação.
+              </p>
+              <p className="about-description">
+                Tenho experiência sólida tanto no frontend quanto no backend, trabalhando com tecnologias 
+                modernas como React, Node.js, TypeScript e C#. Sempre busco entregar projetos de alta 
+                qualidade que atendam às necessidades específicas de cada cliente.
+              </p>
+              
+              <div className="about-stats">
+                <div className="stat-item">
+                  <span className="stat-number">15+</span>
+                  <span className="stat-label">Projetos Concluídos</span>
+                </div>
+                <div className="stat-item">
+                  <span className="stat-number">3+</span>
+                  <span className="stat-label">Anos de Experiência</span>
+                </div>
+                <div className="stat-item">
+                  <span className="stat-number">8+</span>
+                  <span className="stat-label">Tecnologias Dominadas</span>
                 </div>
               </div>
             </div>
             
-            <div className="portfolio-item">
-              <div className="portfolio-image">
-                <img src="/api/placeholder/400/250" alt="Dashboard Analytics" />
-                <div className="portfolio-overlay">
-                  <div className="portfolio-info">
-                    <h3>Dashboard Analytics</h3>
-                    <p>Painel administrativo com gráficos interativos, relatórios em tempo real e gestão de dados</p>
-                    <div className="portfolio-links">
-                      <a href="#" className="portfolio-link">Demo</a>
-                      <a href="#" className="portfolio-link">GitHub</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div className="portfolio-item">
-              <div className="portfolio-image">
-                <img src="/api/placeholder/400/250" alt="App Mobile React Native" />
-                <div className="portfolio-overlay">
-                  <div className="portfolio-info">
-                    <h3>App Mobile Nativo</h3>
-                    <p>Aplicativo React Native com autenticação, push notifications e sincronização offline</p>
-                    <div className="portfolio-links">
-                      <a href="#" className="portfolio-link">Demo</a>
-                      <a href="#" className="portfolio-link">GitHub</a>
-                    </div>
-                  </div>
-                </div>
+            <div className="about-image">
+              <div className="about-image-container">
+                <img 
+                  src={matheusAboutImage} 
+                  alt="Matheus Zufi - Desenvolvedor" 
+                  className="about-profile-image"
+                />
+                <div className="about-image-decoration"></div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <footer className="footer">
+        <div className="footer-container">
+          <div className="footer-content">
+            <div className="footer-left">
+              <h3 className="footer-title">Matheus Zufi</h3>
+              <p className="footer-subtitle">Desenvolvedor Full Stack</p>
+              <p className="footer-description">
+                Transformando ideias em realidade através do código. 
+                Vamos criar algo incrível juntos!
+              </p>
+            </div>
+            
+            <div className="footer-right">
+              <div className="footer-social">
+                <h4 className="footer-social-title">Conecte-se comigo</h4>
+                <div className="footer-social-links">
+                  <a href="https://www.linkedin.com/in/matheus-zufi/" target="_blank" rel="noopener noreferrer" className="footer-social-link">
+                    <svg className="footer-social-icon" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                    LinkedIn
+                  </a>
+                  
+                  <a href="https://github.com/matheuszufi" target="_blank" rel="noopener noreferrer" className="footer-social-link">
+                    <img src={GitHubIcon} alt="GitHub" className="footer-social-icon" />
+                    GitHub
+                  </a>
+                  
+                  <a href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" className="footer-social-link">
+                    <svg className="footer-social-icon" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.569-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893A11.821 11.821 0 0020.064 3.488z"/>
+                    </svg>
+                    WhatsApp
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div className="footer-bottom">
+            <p className="footer-copyright">
+              © 2025 Matheus Zufi. Todos os direitos reservados.
+            </p>
+            <p className="footer-made-with">
+              Desenvolvido com ❤️ e muito ☕
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }

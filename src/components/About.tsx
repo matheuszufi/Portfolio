@@ -3,9 +3,9 @@ import matheusAboutImage from '../assets/images/matheus.png';
 
 const About: React.FC = () => {
   const stats = [
-    { number: "15+", label: "Projetos Concluídos" },
+    { number: "10+", label: "Projetos Concluídos" },
     { number: "3+", label: "Anos de Experiência" },
-    { number: "8+", label: "Tecnologias Dominadas" }
+    { number: "7+", label: "Tecnologias Dominadas" }
   ];
 
   return (
@@ -15,13 +15,13 @@ const About: React.FC = () => {
           <div className="about-text">
             <h2 className="about-title">Sobre Mim</h2>
             <p className="about-description">
-              Sou um desenvolvedor Full Stack com mais de 3 anos de experiência, especializado em criar 
+              Estudo faz quatro anos com conteudos na internet para trabalhar como desenvolvedor Full Stack, busco criar 
               soluções digitais inovadoras e eficientes. Minha paixão pela tecnologia me levou a dominar 
-              diversas ferramentas e linguagens de programação.
+              algumas ferramentas e linguagens de programação.
             </p>
             <p className="about-description">
               Tenho experiência sólida tanto no frontend quanto no backend, trabalhando com tecnologias 
-              modernas como React, Node.js, TypeScript e C#. Sempre busco entregar projetos de alta 
+              modernas como React, Node.js, TypeScript e conhecimentos basicos em C#. Sempre busco entregar projetos de alta 
               qualidade que atendam às necessidades específicas de cada cliente.
             </p>
             

@@ -21,7 +21,7 @@ const Projects: React.FC = () => {
       description: "Sistema completo de e-commerce com ERP integrado, gestão de estoque, vendas e relatórios financeiros",
       logo: hotboxImg,
       logoType: 'image',
-      link: "https://github.com/matheuszufi/HotBox",
+      link: "https://hot-box-erp.vercel.app/",
       category: "Full Stack"
     },
     {

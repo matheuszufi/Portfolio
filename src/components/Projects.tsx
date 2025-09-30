@@ -25,7 +25,7 @@ const Projects: React.FC = () => {
       category: "Full Stack"
     },
     {
-      name: "Landing Page Fluir Engenharia",
+      name: "Fluir Engenharia (Landing Page)",
       tech: "HTML • JavaScript • Tailwind CSS",
       description: "Website corporativo moderno para empresa de engenharia com foco em projetos sustentáveis",
       logo: fluirLogo,
@@ -58,7 +58,7 @@ const Projects: React.FC = () => {
       category: "Game Dev"
     },
     {
-      name: "Landing Page Coopenutri",
+      name: "Coopenutri (Landing Page)",
       tech: "HTML5 • CSS3 • JavaScript • Bootstrap",
       description: "Website institucional responsivo para cooperativa de nutricionistas com design moderno e otimizado para SEO",
       logo: coopenutriLogo,
